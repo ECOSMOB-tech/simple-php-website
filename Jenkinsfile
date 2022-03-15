@@ -10,7 +10,7 @@ node {
 
   stage('SonarQube analysis') {
         // requires SonarQube Scanner 2.8+
-        def scannerHome = tool 'sonar scanner';
+        def scannerHome = tool 'sonar scaner';
         withSonarQubeEnv('sonarqube') {
 
           def projectKey=env.JOB_NAME.replaceAll('%2F','.')
